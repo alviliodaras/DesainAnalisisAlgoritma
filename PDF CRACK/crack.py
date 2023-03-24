@@ -12,3 +12,5 @@ for password in tqdm(passwords, 'Crack PDF'):
         pass
     except pikepdf._core.Error as e:
         print(' [-] Error:', e)
+
+##create by Alvilio Daras
