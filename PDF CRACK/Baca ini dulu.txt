@@ -13,4 +13,7 @@ setelah itu install module dengan cara ketik di cmd seperti berikut
 pip install pikepdf
 pip install tqdm
 
-kemudian buka 
+kemudian sesuaikan nama pdf di file crack.py
+
+jika sudah kemudian buka crack.py di cmd dengan cara mengetikan
+python crack.py
