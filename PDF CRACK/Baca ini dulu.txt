@@ -1,0 +1,16 @@
+install python terbaru
+install pip di python
+berikut cara install pipnya
+
+pada cmd ketik
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+kemudian tekan enter
+ketik lagi
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+
+
+setelah itu install module dengan cara ketik di cmd seperti berikut
+pip install pikepdf
+pip install tqdm
+
+kemudian buka 
