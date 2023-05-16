@@ -1,0 +1,14 @@
+Nama	: Alvilio Daras
+NIM	: 18220011
+
+Jawaban Soal
+
+1. Algoritma aproksimasi adalah algoritma yang memberikan solusi yang mendekati solusi optimal dengan batas kesalahan tertentu, sedangkan algoritma eksak mencari solusi optimal secara akurat.
+
+2. Strategi dasar dalam mengembangkan algoritma aproksimasi meliputi menentukan batas kesalahan, memastikan kompleksitas waktu dan sumber daya yang diperlukan tidak terlalu tinggi, dan menggunakan teknik seperti pembulatan atau pengambilan sampel acak.
+
+3. Contoh kasus di mana algoritma aproksimasi dapat diterapkan dalam kehidupan sehari-hari antara lain optimisasi rute pengiriman barang, penjadwalan produksi pabrik, dan pemilihan portofolio investasi.
+
+4. Algoritma aproksimasi dapat membantu dalam menyelesaikan masalah optimasi linier dengan menggunakan teknik seperti pembulatan atau pengurangan dimensi untuk menghasilkan solusi yang lebih baik secara keseluruhan.
+
+5. Implementasi strategi algoritma aproksimasi pada masalah optimasi nonlinear dengan Python dapat dilakukan dengan menggunakan library seperti SciPy atau Pyomo dan teknik-teknik seperti pengambilan sampel acak atau optimisasi heuristik.
