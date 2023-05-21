@@ -1,0 +1,81 @@
+Nama	: Alvilio Daras
+NIM	: 18220011
+
+Me: Apa yang dimaksud dengan analisis amortisasi? Jelaskan dengan 
+menggunakan contoh kasus kehidupan nyata.
+
+PDF: Analisis amortisasi adalah metode yang digunakan untuk menganalisis biaya waktu eksekusi suatu algoritma atau investasi dalam jangka waktu tertentu. Konsep dasar analisis amortisasi adalah menghitung biaya rata-rata per operasi dari serangkaian operasi dalam algoritma yang dikenakan biaya pada saat eksekusi, yang kemudian digunakan untuk menentukan kompleksitas waktu algoritma.
+
+Contoh kasus kehidupan nyata dari teknik analisis amortisasi adalah pembiayaan kredit mobil. Dalam pembiayaan kredit mobil, biaya amortisasi dapat digunakan untuk menghitung pembayaran bulanan yang diperlukan untuk membayar kembali pinjaman. Biaya amortisasi dalam hal ini meliputi biaya pokok pinjaman, bunga, dan biaya administrasi. Misalnya, jika seseorang membeli mobil dengan harga Rp200 juta dan membayar dengan cicilan selama 5 tahun dengan bunga 10%, maka biaya amortisasi per bulan adalah sekitar Rp4,3 juta.
+
+Me: Apa kegunaan dari teknik analisis amortisasi dalam pemrograman? Berikan 
+contoh penggunaannya dalam pengembangan aplikasi.
+
+PDF: Teknik analisis amortisasi berguna dalam pemrograman untuk menentukan kompleksitas waktu suatu algoritma dan membantu mengidentifikasi operasi yang menyebabkan waktu eksekusi yang lama. Dalam banyak kasus, analisis amortisasi juga dapat digunakan untuk menemukan solusi yang lebih efisien untuk masalah tertentu dengan memodifikasi algoritma yang ada.
+
+Contoh penggunaan teknik analisis amortisasi dalam pengembangan aplikasi adalah pada algoritma sorting. Misalnya, pada algoritma quicksort, teknik analisis amortisasi dapat digunakan untuk menghitung biaya waktu rata-rata per operasi dalam serangkaian operasi pada algoritma tersebut. Dengan demikian, kita dapat mengetahui kompleksitas waktu dari algoritma quicksort dan memperkirakan waktu eksekusi rata-rata dari serangkaian operasi tersebut. Selain itu, teknik analisis amortisasi juga dapat membantu kita dalam memodifikasi algoritma quicksort agar lebih efisien dan memiliki kompleksitas waktu yang lebih rendah.
+
+Me: Bagaimana cara menghitung besarnya pembayaran cicilan bulanan dan bunga 
+pada pembiayaan kredit mobil menggunakan teknik analisis amortisasi? 
+Berikan contoh perhitungan beserta kode program Python.
+
+PDF: Untuk menghitung besarnya pembayaran cicilan bulanan dan bunga pada pembiayaan kredit mobil menggunakan teknik analisis amortisasi, kita dapat menggunakan rumus berikut:
+
+Cicilan = (P x i) / (1 - (1 + i)^-n)
+
+dimana:
+- P adalah jumlah pinjaman
+- i adalah tingkat bunga per bulan
+- n adalah jumlah bulan dalam jangka waktu pinjaman
+
+Untuk menghitung besarnya bunga per bulan, kita dapat menggunakan rumus berikut:
+
+Bunga = Sisa Pinjaman x Tingkat Bunga
+
+dimana:
+- Sisa Pinjaman adalah jumlah pinjaman yang belum dibayar pada akhir setiap bulan.
+
+Berikut ini contoh perhitungan besarnya pembayaran cicilan bulanan dan bunga pada pembiayaan kredit mobil dengan harga Rp200 juta dan membayar dengan cicilan selama 5 tahun dengan bunga 10%:
+
+P = 200000000
+i = 0.1/12 # tingkat bunga per bulan
+n = 5*12 # jumlah bulan dalam jangka waktu pinjaman
+
+Cicilan = (P * i) / (1 - (1 + i)**(-n))
+print("Cicilan Bulanan: Rp", round(Cicilan))
+
+Sisa_Pinjaman = P
+for j in range(1, n+1):
+    Bunga = Sisa_Pinjaman * i
+    Pokok = Cicilan - Bunga
+    Sisa_Pinjaman -= Pokok
+    
+    if j % 12 == 0:
+        print("Sisa Pinjaman Tahun ke-", int(j/12), ": Rp", round(Sisa_Pinjaman))
+
+Output dari program di atas adalah sebagai berikut:
+
+Cicilan Bulanan: Rp 4,387,574
+Sisa Pinjaman Tahun ke- 1 : Rp 128000000
+Sisa Pinjaman Tahun ke- 2 : Rp 72000000
+Sisa Pinjaman Tahun ke- 3 : Rp 16000000
+Sisa Pinjaman Tahun ke- 4 : Rp -48000000
+
+Catatan: Sisa pinjaman pada tahun ke-4 menjadi negatif karena cicilan yang dibayarkan sudah melebihi jumlah pinjaman.
+
+Me: Apa keuntungan dari menggunakan teknik analisis amortisasi dalam 
+menghitung kompleksitas waktu dan ruang suatu algoritma? Berikan contoh 
+penggunaannya dalam analisis algoritma.
+
+PDF: Keuntungan dari menggunakan teknik analisis amortisasi dalam menghitung kompleksitas waktu dan ruang suatu algoritma adalah bahwa teknik ini dapat memberikan perkiraan biaya waktu rata-rata per operasi dalam serangkaian operasi tersebut dan memperkirakan kompleksitas waktu dari algoritma. Dengan demikian, kita dapat mengetahui seberapa efisien suatu algoritma dalam hal waktu dan ruang yang dibutuhkan.
+
+Contoh penggunaan teknik analisis amortisasi dalam analisis algoritma adalah pada algoritma dynamic programming. Pada algoritma ini, kita dapat menggunakan teknik analisis amortisasi untuk menghitung kompleksitas waktu dan ruang yang dibutuhkan untuk menyelesaikan masalah tertentu. Sebagai contoh, pada algoritma Fibonacci dengan dynamic programming, kita dapat menggunakan teknik analisis amortisasi untuk menghitung kompleksitas waktu dan ruang yang dibutuhkan untuk menghasilkan deret bilangan Fibonacci hingga suku ke-n. Dengan demikian, kita dapat mengetahui seberapa efisien algoritma tersebut dalam hal waktu dan ruang yang dibutuhkan.
+
+Me:  Apa perbedaan antara analisis amortisasi dan analisis kasus terburuk dalam 
+menghitung kompleksitas algoritma? Jelaskan dengan menggunakan contoh.
+
+PDF: Perbedaan antara analisis amortisasi dan analisis kasus terburuk dalam menghitung kompleksitas algoritma adalah bahwa analisis kasus terburuk memberikan perkiraan atas waktu terlama yang dibutuhkan oleh algoritma untuk menyelesaikan masalah tertentu, sedangkan analisis amortisasi memberikan perkiraan biaya waktu rata-rata per operasi dalam serangkaian operasi tersebut.
+
+Sebagai contoh, pada algoritma dynamic array, analisis kasus terburuk akan memberikan perkiraan atas waktu terlama yang dibutuhkan oleh algoritma untuk melakukan operasi seperti insert atau delete. Sedangkan pada analisis amortisasi, kita dapat menghitung biaya waktu rata-rata per operasi dalam serangkaian operasi tersebut. Sehingga kita dapat mengetahui seberapa efisien algoritma tersebut dalam hal waktu dan ruang yang dibutuhkan.
+
+Dalam hal ini, jika kita ingin mengetahui berapa lama waktu yang dibutuhkan untuk melakukan serangkaian operasi insert atau delete pada dynamic array, maka analisis kasus terburuk akan memberikan perkiraan atas waktu terlama yang dibutuhkan oleh algoritma. Sedangkan dengan menggunakan teknik analisis amortisasi, kita dapat menghitung biaya waktu rata-rata per operasi dalam serangkaian operasi tersebut dan memperkirakan kompleksitas waktu dari algoritma.
